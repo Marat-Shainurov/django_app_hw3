@@ -12,8 +12,10 @@ class Command(BaseCommand):
         with open('data_category.json', encoding='utf-8') as file:
             data = json.load(file)
 
-        products_to_add = []
-        for prod in data:
-            products_to_add.append(Category(**prod))
+        category_to_add = []
+        for category in data:
+            category_to_add.append(
+                Category(id=category['pk'], category_name=category['fields']['category_name'],
+                         category_description=category['fields']['category_description']))
 
-        Category.objects.bulk_create(products_to_add)
+        Category.objects.bulk_create(category_to_add)

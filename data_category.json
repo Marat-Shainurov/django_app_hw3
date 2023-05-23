@@ -1,7 +1,7 @@
 [
   {
     "model": "catalog.category",
-    "pk": 7,
+    "pk": 1,
     "fields": {
       "category_name": "Smartphones",
       "category_description": "All the e-store's smartphones."
@@ -9,7 +9,7 @@
   },
   {
     "model": "catalog.category",
-    "pk": 8,
+    "pk": 2,
     "fields": {
       "category_name": "Computers",
       "category_description": "All the e-store's laptops, computers."
@@ -17,7 +17,7 @@
   },
   {
     "model": "catalog.category",
-    "pk": 9,
+    "pk": 3,
     "fields": {
       "category_name": "Accessories",
       "category_description": "All the e-store's accessories for smartphones, computers."
