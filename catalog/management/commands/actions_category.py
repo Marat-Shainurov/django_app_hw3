@@ -9,7 +9,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         Category.objects.all().delete()
 
-        with open('data_product.json', encoding='utf-8') as file:
+        with open('data_category.json', encoding='utf-8') as file:
             data = json.load(file)
 
         products_to_add = []
