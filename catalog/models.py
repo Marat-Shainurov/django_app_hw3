@@ -32,3 +32,17 @@ class Category(models.Model):
         verbose_name = 'category'
         verbose_name_plural = 'categories'
         ordering = ('category_name',)
+
+
+class Contacts(models.Model):
+    company_name = models.CharField(max_length=50, verbose_name='company_name')
+    address = models.TextField(verbose_name='company_address')
+    phone = models.CharField(max_length=50, verbose_name='company_phone')
+    email = models.CharField(max_length=50, verbose_name='company_email')
+
+    def __str__(self):
+        return f'{self.company_name} {self.phone} {self.email}'
+
+    class Meta:
+        verbose_name = 'company'
+        verbose_name_plural = 'companies'
