@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/uikit.min.css"/>
+    <link rel="stylesheet" href="static/uikit.css"/>
+    <link rel="stylesheet" href="static/uikit-rtl.css"/>
+    <link rel="stylesheet" href="static/uikit-rtl.min.css"/>
+    <script src="static/uikit.min.js"></script>
+    <script src="static/uikit.js"></script>
+    <script src="static/uikit-icons.js"></script>
+    <script src="static/uikit-icons.min.js"></script>
+</head>
+<body>
+<div class="uk-container uk-container-xsmall">
+    <div class="uk-overflow-auto">
+        <table class="uk-table uk-table-middle uk-table-striped uk-table-small uk-table-divider">
+            <thead>
+            <tr>
+                <div align="center">
+                    <th class="uk-table-shrink"></th>
+                    <th class="uk-table-shrink"><h3>Image</h3></th>
+                    <th class="uk-table-expand"><h3 align="center">Product name</h3></th>
+                    <th class="uk-width-small"><h3 align="left">Description</h3></th>
+                    <th class="uk-table-shrink uk-text-nowrap"><h3>Price</h3></th>
+                </div>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for product in data_to_display %}
+            <tr align="center">
+                <td><input class="uk-checkbox" type="checkbox" aria-label="Checkbox"></td>
+                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" height="40"
+                         alt=""></td>
+                <td class="uk-table-link">
+                    <a class="uk-link-reset" href="">{{product.name}}</a>
+                </td>
+                <td class="uk-text-truncate">{{product.description}}</td>
+                <td class="uk-text-nowrap">{{product.price}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>
+<div align="center">
+    <p uk-margin>
+        <button class="uk-button uk-button-primary uk-button-large">Buy</button>
+    </p>
+</div>
+>
+</body>
+</html>
