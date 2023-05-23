@@ -1,0 +1,80 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Xiaomi 11T",
+      "description": "Xiaomi 11T smartphone",
+      "img": "",
+      "category": "Smartphones",
+      "price": 500,
+      "creation_date": "2023-05-23T11:26:49Z",
+      "last_change_date": "2023-05-23T11:26:54Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Iphone 13",
+      "description": "Iphone 13 smartphone",
+      "img": "",
+      "category": "Smartphones",
+      "price": 2000,
+      "creation_date": "2023-05-23T11:26:49Z",
+      "last_change_date": "2023-05-23T11:26:54Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Iphone 14",
+      "description": "Iphone 14 smartphone",
+      "img": "",
+      "category": "Smartphones",
+      "price": 2500,
+      "creation_date": "2023-05-23T11:26:49Z",
+      "last_change_date": "2023-05-23T11:26:54Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "ASUS",
+      "description": "ASUS laptop",
+      "img": "",
+      "category": "Computers",
+      "price": 1000,
+      "creation_date": "2023-05-23T11:26:49Z",
+      "last_change_date": "2023-05-23T11:26:54Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "HP",
+      "description": "HP laptop",
+      "img": "",
+      "category": "Computers",
+      "price": 1200,
+      "creation_date": "2023-05-23T11:26:49Z",
+      "last_change_date": "2023-05-23T11:26:54Z"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Lenovo",
+      "description": "Lenovo computer",
+      "img": "",
+      "category": "Computers",
+      "price": 900,
+      "creation_date": "2023-05-23T11:26:49Z",
+      "last_change_date": "2023-05-23T11:26:54Z"
+    }
+  }
+]
